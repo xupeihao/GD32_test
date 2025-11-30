@@ -23,5 +23,4 @@
   D:\Keil5\Pack\GigaDevice\GD32F4xx_DFP\3.3.0\Device\F4XX\Firmware\Peripherals\inc\gd32f4xx_syscfg.h \
   D:\Keil5\Pack\GigaDevice\GD32F4xx_DFP\3.3.0\Device\F4XX\Firmware\Peripherals\inc\gd32f4xx_timer.h \
   D:\Keil5\Pack\GigaDevice\GD32F4xx_DFP\3.3.0\Device\F4XX\Firmware\Peripherals\inc\gd32f4xx_usart.h \
-  D:\Keil5\ARM\ARMCLANG\bin\..\include\stdio.h \
-  ..\Libraries\timer\lib_timer5.h
+  D:\Keil5\ARM\ARMCLANG\bin\..\include\stdio.h

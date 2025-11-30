@@ -6,5 +6,17 @@
     ".vscode": true,
     "Project": true,
     "desktop.ini": true
+  },
+  "files.associations": {
+    "app.h": "c",
+    "board_config.h": "c",
+    "compare": "c",
+    "limits": "c",
+    "new": "c",
+    "cmath": "c",
+    "type_traits": "c",
+    "stdio.h": "c",
+    "systick.h": "c",
+    "freertos.h": "c"
   }
 }

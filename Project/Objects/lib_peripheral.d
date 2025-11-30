@@ -26,11 +26,10 @@
   D:\Keil5\Pack\GigaDevice\GD32F4xx_DFP\3.3.0\Device\F4XX\Firmware\Peripherals\inc\gd32f4xx_usart.h \
   D:\Keil5\ARM\ARMCLANG\bin\..\include\stdio.h \
   ..\Libraries\usart\lib_usart0.h ..\Libraries\timer\lib_timer.h \
-  ..\Libraries\timer\timer_config.h ..\Libraries\timer\lib_timer5.h \
-  ..\Libraries\exti\lib_exti.h ..\Libraries\exti\exti_config.h \
-  ..\Libraries\rtc\lib_rtc.h ..\Libraries\rtc\rtc_config.h \
-  ..\Libraries\wdog\lib_wdog.h ..\Libraries\wdog\wdog_config.h \
-  ..\Libraries\adc\lib_adc.h ..\Libraries\adc\ADC_config.h \
-  ..\User\systick.h ..\Libraries\spi\lib_spi.h \
-  ..\Libraries\spi\spi_config.h ..\Libraries\i2c\lib_i2c.h \
-  ..\Libraries\i2c\i2c_config.h
+  ..\Libraries\timer\timer_config.h ..\Libraries\exti\lib_exti.h \
+  ..\Libraries\exti\exti_config.h ..\Libraries\rtc\lib_rtc.h \
+  ..\Libraries\rtc\rtc_config.h ..\Libraries\wdog\lib_wdog.h \
+  ..\Libraries\wdog\wdog_config.h ..\Libraries\adc\lib_adc.h \
+  ..\Libraries\adc\ADC_config.h ..\User\systick.h \
+  ..\Libraries\spi\lib_spi.h ..\Libraries\spi\spi_config.h \
+  ..\Libraries\i2c\lib_i2c.h ..\Libraries\i2c\i2c_config.h

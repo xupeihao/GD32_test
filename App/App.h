@@ -6,6 +6,10 @@
 #include "stdio.h"
 #include "bsp.h"
 #include "string.h"
+#include "FreeRTOS.h"
+#include "task.h"
+
+//extern TaskHandle_t xTask1Handle ;
 
 
 
@@ -17,7 +21,8 @@ void App_init();
 /////////////////// UI/UX ///////////////////////
 void App_ui_init();
 
-
+/////////////////FreeRTOS Task///////////////////
+void vTask1(void *pvParameters);
 
 
 

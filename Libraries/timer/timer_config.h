@@ -13,7 +13,7 @@
 #define USE_LIB_TIMER_2		0
 #define USE_LIB_TIMER_3		0
 #define USE_LIB_TIMER_4		0
-#define USE_LIB_TIMER_5		1
+#define USE_LIB_TIMER_5		0
 #define USE_LIB_TIMER_6		0
 #define USE_LIB_TIMER_7		0
 #define USE_LIB_TIMER_8		0

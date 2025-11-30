@@ -22,4 +22,23 @@
   D:\Keil5\Pack\GigaDevice\GD32F4xx_DFP\3.3.0\Device\F4XX\Firmware\Peripherals\inc\gd32f4xx_syscfg.h \
   D:\Keil5\Pack\GigaDevice\GD32F4xx_DFP\3.3.0\Device\F4XX\Firmware\Peripherals\inc\gd32f4xx_timer.h \
   D:\Keil5\Pack\GigaDevice\GD32F4xx_DFP\3.3.0\Device\F4XX\Firmware\Peripherals\inc\gd32f4xx_usart.h \
-  ..\User\systick.h D:\Keil5\ARM\ARMCLANG\bin\..\include\stdio.h
+  ..\User\systick.h D:\Keil5\ARM\ARMCLANG\bin\..\include\stdio.h \
+  ..\App\app.h ..\Hardware\board_config.h \
+  D:\Keil5\ARM\ARMCLANG\bin\..\include\string.h \
+  ..\Libraries\lib_peripheral.h ..\Libraries\usart\lib_usart.h \
+  ..\Libraries\usart\usart_config.h ..\Libraries\usart\lib_usart0.h \
+  ..\Libraries\timer\lib_timer.h ..\Libraries\timer\timer_config.h \
+  ..\Libraries\exti\lib_exti.h ..\Libraries\exti\exti_config.h \
+  ..\Libraries\rtc\lib_rtc.h ..\Libraries\rtc\rtc_config.h \
+  ..\Libraries\wdog\lib_wdog.h ..\Libraries\wdog\wdog_config.h \
+  ..\Libraries\adc\lib_adc.h ..\Libraries\adc\ADC_config.h \
+  ..\Libraries\spi\lib_spi.h ..\Libraries\spi\spi_config.h \
+  ..\Libraries\i2c\lib_i2c.h ..\Libraries\i2c\i2c_config.h \
+  ..\Hardware\bsp.h ..\FreeRTOS\include\FreeRTOS.h \
+  D:\Keil5\ARM\ARMCLANG\bin\..\include\stddef.h \
+  ..\FreeRTOS\FreeRTOSConfig.h ..\FreeRTOS\include\projdefs.h \
+  ..\FreeRTOS\include\portable.h \
+  ..\FreeRTOS\include\deprecated_definitions.h \
+  ..\FreeRTOS\portable\GCC\ARM_CM4F\portmacro.h \
+  ..\FreeRTOS\include\mpu_wrappers.h ..\FreeRTOS\include\task.h \
+  ..\FreeRTOS\include\list.h
