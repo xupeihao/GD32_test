@@ -1,0 +1,53 @@
+#include "lib_exti.h"
+
+
+void lib_exti_soft_init(exti_line_enum extix, IRQn_Type irqn, uint8_t pre_priority,
+                        uint8_t sub_priority) {
+    //// 2. 外部中断的初始化
+    rcu_periph_clock_enable(RCU_SYSCFG);
+    //////2.2 exti
+    exti_init(extix, EXTI_INTERRUPT, EXTI_TRIG_NONE);
+    exti_interrupt_flag_clear(extix);
+    //////2.3 中断优先级
+    nvic_irq_enable(irqn, pre_priority, sub_priority);
+}
+
+void lib_exti_hard_init(rcu_periph_enum rcu, uint32_t port, uint32_t pin,
+                        uint32_t pupd,
+                        uint8_t src_port,uint8_t src_pin,
+                        exti_trig_type_enum trig,
+                        exti_line_enum extix, IRQn_Type irqn, uint8_t pre_priority,
+                        uint8_t sub_priority) {
+    //// 1. GPIO初始化
+    rcu_periph_clock_enable(rcu);
+    gpio_mode_set(port, GPIO_MODE_INPUT, pupd, pin);
+
+    //// 2. 外部中断的初始化
+    rcu_periph_clock_enable(RCU_SYSCFG);
+    //////2.1 syscfg
+    syscfg_exti_line_config(src_port, src_pin);
+    //////2.2 exti
+    exti_init(extix, EXTI_INTERRUPT, trig);
+    exti_interrupt_flag_clear(extix);
+    //////2.3 中断优先级
+    nvic_irq_enable(irqn, pre_priority, sub_priority);
+}
+
+
+void lib_exti_init() {
+
+#if USE_LIB_EXTI_0
+
+#if LIB_EXTI0_SOFT_TRIG_ENABLE
+    //soft初始化
+    lib_exti_soft_init(EXTI_0, EXTI0_IRQn, LIB_EXTI0_NVIC);
+#else
+    //hard初始化
+    lib_exti_hard_init(LIB_EXT0_GPIO_RCU, LIB_EXT0_GPIO_PORT, GPIO_PIN_0, 
+	LIB_EXT0_GPIO_PUPD, LIB_EXT0_GPIO_SRC, 
+			EXTI_SOURCE_PIN0, LIB_EXT0_TRIG, EXTI_0, EXTI0_IRQn, LIB_EXTI0_NVIC);
+#endif
+
+#endif
+
+}
