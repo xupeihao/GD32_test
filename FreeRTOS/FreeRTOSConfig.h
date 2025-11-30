@@ -66,7 +66,7 @@
 //  <o>Timer task stack depth [words] <0-65535>
 //  <i> Stack for timer task in words.
 //  <i> Default: 80
-#define configTIMER_TASK_STACK_DEPTH            128
+#define configTIMER_TASK_STACK_DEPTH            80
 
 //  <o>Timer task priority <0-56>
 //  <i> Timer task priority.
@@ -270,7 +270,7 @@
 
 #if (defined(__ARMCC_VERSION) || defined(__GNUC__) || defined(__ICCARM__))
 /* Include debug event definitions */
-#include "freertos_evr.h"
+//#include "freertos_evr.h"
 #endif
 
 #endif /* FREERTOS_CONFIG_H */
