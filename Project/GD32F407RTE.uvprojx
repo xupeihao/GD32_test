@@ -549,6 +549,11 @@
               <FileType>1</FileType>
               <FilePath>..\FreeRTOS\stream_buffer.c</FilePath>
             </File>
+            <File>
+              <FileName>FreeRTOSConfig.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\FreeRTOS\FreeRTOSConfig.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
